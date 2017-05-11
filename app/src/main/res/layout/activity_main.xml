@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.yls.note.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="记事本列表"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:background="#0fdab2"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_margin="5dp"
+            android:background="#81966F"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            >
+        </ListView>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_editnote"
+        android:layout_width="fill_parent"
+
+        android:layout_gravity="center"
+
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
